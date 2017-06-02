@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - sushe@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="sushe">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="book"/>
+    <schema id="3" name="dormitory"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="map"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="test"/>
+    <table id="9" parent="1" name="admin"/>
+    <table id="10" parent="1" name="building"/>
+    <table id="11" parent="1" name="damage"/>
+    <table id="12" parent="1" name="domitory"/>
+    <table id="13" parent="1" name="log"/>
+    <table id="14" parent="1" name="out1"/>
+    <table id="15" parent="1" name="repair"/>
+    <table id="16" parent="1" name="student"/>
+    <table id="17" parent="1" name="tb"/>
+    <table id="18" parent="1" name="teacher"/>
+    <column id="19" parent="9" name="Admin_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="20" parent="9" name="Admin_Username">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="21" parent="9" name="Admin_Password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="22" parent="9" name="Admin_Name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="23" parent="9" name="Admin_Sex">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="24" parent="9" name="Admin_Tel">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="25" parent="9" name="PRIMARY">
+      <columns>Admin_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="26" parent="10" name="Building_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="27" parent="10" name="Building_Name">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="28" parent="10" name="Building_Introduction">
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <key id="29" parent="10" name="PRIMARY">
+      <columns>Building_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="30" parent="11" name="Damage_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="31" parent="11" name="Building_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="32" parent="11" name="Damage_Description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="33" parent="11" name="Damage_State">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="34" parent="11" name="Repair_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="35" parent="11" name="PRIMARY">
+      <columns>Damage_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="36" parent="12" name="Domitory_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="37" parent="12" name="Domitory_BuildingID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="38" parent="12" name="Domitory_Name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="39" parent="12" name="Domitory_Type">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="40" parent="12" name="Domitory_Number">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="41" parent="12" name="Domitory_Tel">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="42" parent="12" name="PRIMARY">
+      <columns>Domitory_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="43" parent="13" name="Log_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="44" parent="13" name="Log_StudentID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="45" parent="13" name="Log_TeacherID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="46" parent="13" name="Log_Date">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="47" parent="13" name="Log_Remark">
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <key id="48" parent="13" name="PRIMARY">
+      <columns>Log_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="49" parent="14" name="Out_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="50" parent="14" name="Out_StudentID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="51" parent="14" name="Out_Date">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="52" parent="14" name="Out_Remark">
+      <data-type>varchar(1000)|0</data-type>
+    </column>
+    <key id="53" parent="14" name="PRIMARY">
+      <columns>Out_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="54" parent="15" name="Repair_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="55" parent="15" name="Repair_Username">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="56" parent="15" name="Repair_Password">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="57" parent="15" name="Repair_Name">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="58" parent="15" name="Repair_Sex">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="59" parent="15" name="Repair_Tel">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="60" parent="15" name="PRIMARY">
+      <columns>Repair_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="61" parent="16" name="Student_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="62" parent="16" name="Student_DomitoryID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="63" parent="16" name="Student_Username">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="64" parent="16" name="Student_Password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="65" parent="16" name="Student_Name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="66" parent="16" name="Student_Sex">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="67" parent="16" name="Student_Class">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="68" parent="16" name="Student_State">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="69" parent="16" name="PRIMARY">
+      <columns>Student_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="70" parent="17" name="TB_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="71" parent="17" name="TB_TeacherID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="72" parent="17" name="TB_BuildingID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="73" parent="17" name="PRIMARY">
+      <columns>TB_ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="74" parent="18" name="Teacher_ID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="75" parent="18" name="Teacher_Username">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="76" parent="18" name="Teacher_Password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="77" parent="18" name="Teacher_Name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="78" parent="18" name="Teacher_Sex">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="79" parent="18" name="Teacher_Tel">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="80" parent="18" name="PRIMARY">
+      <columns>Teacher_ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

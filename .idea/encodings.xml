@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/action/AdminLog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/action/BuildingDel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/action/BuildingUpdate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/action/GoLogin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/action/PasswordUpdateSave.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/AdminDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/StudentDao.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
