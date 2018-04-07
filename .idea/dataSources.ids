@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<component name="dataSourceStorage">
-  <data-source name="MySQL - book@localhost" uuid="0ff22ff1-1995-4208-b80c-272bfa2bc89c">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-  <data-source name="MySQL - sushe@localhost" uuid="814e2bdd-6820-4219-ad58-c7afd32afe5f">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
-  </data-source>
-</component>
